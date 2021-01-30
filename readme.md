@@ -3,21 +3,25 @@
 # Installation
 
 ```sh
-$ npm install <package> --save
+$ npm install lesca-url-parameters --save
 ```
 
 # Usage
 
 ```javascript
-import foo from 'foo';
+import { Hash } from 'lesca';
+
+// if url is "https://www.example.com/?name=james&age=18";
+console.log(Hash.get('name')); //james
+console.log(Hash.get('age')); //18
 ```
 
 # Methods
 
-| method | options | description | default |
-| :----- | :-----: | :---------: | ------: |
-
-# Properties
-
-| Properties | type | description | default |
-| :--------- | :--: | :---------: | ------: |
+| method |     options      | description                                                          | default |
+| :----: | :--------------: | :------------------------------------------------------------------- | ------: |
+|  Hash  |     get(key)     | https://www.example.com/?name=james => get('name') => return 'james' |         |
+|        |   remove(key)    | remove key                                                           |         |
+|        | removeAndGo(key) | remove key and href to                                               |         |
+|        |      root()      | https://.../folder/success.html => return https://.../folder/        |         |
+|        |      file()      | https://.../folder/success.html => return success.html               |         |
