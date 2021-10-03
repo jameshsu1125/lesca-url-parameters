@@ -4,12 +4,10 @@ import MyClass from './../lib/index';
 
 import './styles.css';
 
+console.log(MyClass.get('a'));
+
 function Demo() {
-	return (
-		<>
-			<MyClass />
-		</>
-	);
+	return <></>;
 }
 
 render(<Demo />, document.getElementById('app'));

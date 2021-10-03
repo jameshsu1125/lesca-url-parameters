@@ -8,7 +8,7 @@ module.exports = {
 			for (var i in p) {
 				var key = p[i].split('=')[0];
 				if (t == key) {
-					return p[i].split('=')[1];
+					return p[i].split('=')[1].split('#')[0n];
 				}
 			}
 			return false;
