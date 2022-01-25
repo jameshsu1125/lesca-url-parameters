@@ -1,0 +1,71 @@
+@m0: #fcfad4;
+@m1: #a1a195;
+@m2: #5c605f;
+@m3: #464646;
+@m4: #9b2142;
+@c0: #53bbe9;
+@c1: #70f049;
+@c2: #fadf4c;
+@c3: #e6873c;
+@c4: #ea347c;
+
+body {
+	margin: 0;
+	background: @m0;
+	font-family: 'Arial', sans-serif;
+
+	& > #app {
+		position: relative;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		box-sizing: border-box;
+		padding: 100px;
+		min-height: 100vh;
+		width: 100%;
+
+		& > div:nth-child(1) {
+			background-color: @c4;
+			a,
+			a:link,
+			a:active {
+				color: @m0;
+			}
+		}
+
+		& > div:nth-child(2) {
+			background-color: @m0;
+			& > p {
+				padding: 10px;
+				background-color: #eee;
+			}
+		}
+
+		& > div {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			justify-content: center;
+			margin: 10px 0;
+			padding: 20px;
+			width: 500px;
+			border-radius: 5px;
+			background-color: @m0;
+			color: @m2;
+
+			& > code {
+				box-sizing: border-box;
+				padding: 20px;
+				width: 100%;
+				border: double @m4 1px;
+				color: @m4;
+				line-height: 20px;
+
+				& > span {
+					color: @m2;
+				}
+			}
+		}
+	}
+}

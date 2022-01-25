@@ -6,21 +6,26 @@
 npm install lesca-url-parameters --save
 ```
 
+# Demo
+
+[https://jameshsu1125.github.io/lesca-url-parameters/](https://jameshsu1125.github.io/lesca-url-parameters/)
+
 # Usage
 
 ```javascript
 import QueryString from 'lesca-url-parameters';
 
-// if url is "https://www.example.com/?name=james&age=18";
-const name = QueryString.get('name'); // => james
-const age = QueryString.get('age'); // => 18
+// url = "https://www.example.com/?name=James&age=40&birthday=1981";
+const name = QueryString.get('name'); // James
+const age = QueryString.get('age'); // 40
+const birthday = QueryString.get('birthday'); // 1981
 ```
 
 # Methods
 
-|    method    |   options   |                          description                          | default |
-| :----------: | :---------: | :-----------------------------------------------------------: | ------: |
-|  .get(key)   | key[string] |                   get url parameters by key                   |         |
-| .remove(key) | key[string] |                   get url after remove key                    |         |
-|    root()    |             | https://.../folder/success.html => return https://.../folder/ |         |
-|    file()    |             |    https://.../folder/success.html => return success.html     |         |
+|    method    |   options   |       description        | default |
+| :----------: | :---------: | :----------------------: | ------: |
+|  .get(key)   | key[string] |   get url value by key   |         |
+| .remove(key) | key[string] | get url after remove key |         |
+|    root()    |             |    get html file root    |         |
+|    file()    |             |      get html file       |         |
