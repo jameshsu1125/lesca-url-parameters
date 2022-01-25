@@ -1,6 +1,6 @@
 {
 	"name": "lesca-url-parameters",
-	"version": "2.0.2",
+	"version": "2.0.3",
 	"description": "npm-base-package",
 	"main": "lib/index.js",
 	"scripts": {
@@ -16,7 +16,9 @@
 	"keywords": [
 		"lesca",
 		"衝康吉",
-		"jameshsu1125"
+		"jameshsu1125",
+		"query string",
+		"url parameters"
 	],
 	"license": "MIT",
 	"devDependencies": {
