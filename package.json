@@ -1,6 +1,6 @@
 {
   "name": "lesca-url-parameters",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "get query string parameters value",
   "main": "lib/index.js",
   "scripts": {
@@ -53,10 +53,5 @@
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.8.1"
   },
-  "author": "jamehsu1125 <jameshsu1125@gmail.com>",
-  "homepage": "https://github.com/jameshsu1125/lesca-url-parameters",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:jameshsu1125/lesca-url-parameters.git"
-  }
+  "author": "jamehsu1125 <jameshsu1125@gmail.com>"
 }
