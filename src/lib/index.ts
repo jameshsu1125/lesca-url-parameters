@@ -1,9 +1,9 @@
 /**
- *
+ * get value of queru string parameter
  * @param {string} t url parameter
  * @returns value
  */
-export const get = (t) => {
+export const get = (t: string) => {
   const h = window.location.href.split('?');
   if (h.length < 2) {
     return false;
@@ -21,11 +21,11 @@ export const get = (t) => {
 };
 
 /**
- *
+ * get a specific URL with parameters removed
  * @param {string} t url parameter
  * @returns url
  */
-export const remove = (t) => {
+export const remove = (t: string) => {
   const h = window.location.href.split('?');
   const u = window.location.origin + window.location.pathname;
   if (h.length < 2) {
@@ -47,7 +47,7 @@ export const remove = (t) => {
 };
 
 /**
- *
+ * get current root directory
  * @returns url
  */
 export const root = () => {
@@ -62,7 +62,7 @@ export const root = () => {
 };
 
 /**
- *
+ * get current file
  * @returns file name
  */
 export const file = () => {

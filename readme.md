@@ -42,5 +42,4 @@ const birthday = QueryString.get('birthday'); // 1981
 
 ### Features
 
-- TypeScript
 - maintain if necessary
